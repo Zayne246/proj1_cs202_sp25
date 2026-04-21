@@ -36,6 +36,5 @@ class TestRegionFunctions(unittest.TestCase):
         projected = project_condition(self.rc, 5)
         self.assertIsInstance(projected, RegionCondition)
         self.assertEqual(projected.year, self.rc.year + 5)
-
 if __name__ == '__main__':
     unittest.main()
